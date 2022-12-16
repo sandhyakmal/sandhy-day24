@@ -1,0 +1,38 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12 container-pbb">
+            <div class="pbb-content">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h2>PBB Kalkulator</h2>
+                        </div>
+                        <p><small>{{today | date:'medium'}}</small></p>
+                        <div class="form-group mb-3">
+                            <label  class="mb-2">Luas Tanah</label>
+                            <input class="form-control" min="0" type="number" name="luasTanah" [(ngModel)]="luasTanah" id="luastanah" placeholder="Masukan Luas Tanah">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Luas Bangunan</label>
+                            <input class="form-control" min="0" type="number" name="luasBangunan" [(ngModel)]="luasBangunan" id="luasbangunan" placeholder="Masukan Luas Bangunan">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>NJOP Tanah</label>
+                            <input class="form-control" min="0" type="number" name="njopTanah" [(ngModel)]="njopTanah" id="njoptanah" placeholder="Masukan NJOP Tanah">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>NJOP Bangunan</label>
+                            <input class="form-control" min="0" type="number" name="njopBangunan" [(ngModel)]="njopBangunan" id="njopbangunan" placeholder="Masukan NJOP Bangunan">
+                        </div>
+                        <button (click)="hitung()" class="btn btn-primary mt-3">Hitung</button>
+            
+                        <div *ngIf="pbb > 0" class="alert alert-primary mt-3" role="alert">
+                            Besaran Pajak PBB adalah : {{pbb}}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>            
+</div>

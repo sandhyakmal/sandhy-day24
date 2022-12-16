@@ -1,0 +1,50 @@
+.row{
+    display: flex;
+    justify-content:inherit;
+}
+
+.col{
+    padding: 0px 30px 30px 30px;
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: rgb(56, 169, 84);
+    font-size: 20px;
+}
+
+.left{
+    background-color: white;
+    opacity: 0.6;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.right{
+    background-color: white;
+    width: 50%;
+    
+}
+.description-porto{
+    font-size:17px;
+    color: black;
+    text-align: justify;
+}
+
+.image-container{
+    display: grid;
+    gap: 20px;
+    flex: 2;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content:flex-start;
+    display: flex;
+    flex-wrap: wrap; */
+} 
+.image{
+    width: 100%;
+    height: auto;
+    
+}

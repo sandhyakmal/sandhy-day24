@@ -1,0 +1,58 @@
+.container-pbb {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.pbb-content {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  width: 500px;
+}
+
+/*
+.card {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(235, 233, 233);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+.btn{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(91, 213, 250);
+}
+
+input {
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+#hasil {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+} */

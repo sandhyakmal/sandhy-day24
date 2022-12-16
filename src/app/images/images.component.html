@@ -1,0 +1,13 @@
+<h1>GALERY</h1>
+
+<div class="option">
+    <div (click)="addImage()" class="button"><a href="#" >Add Images</a></div>
+</div>
+
+<div class="image-container">
+    <img *ngFor="let image of images " [src]="image" alt="image">
+</div>
+
+
+
+
