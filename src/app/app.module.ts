@@ -15,6 +15,7 @@ import { MenuAppComponent } from './components/menu-app/menu-app.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { AntrianComponent } from './components/antrian/antrian.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
