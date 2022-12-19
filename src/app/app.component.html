@@ -75,9 +75,24 @@
 <!-- <p>{{calculator.merkCalculator}}</p>
 <button (click)="calculator.getNumberEasy()">Click</button> -->
 
-<ul>
+<!-- <ul>
   <li *ngFor="let post of posts">
     <h3>{{post.title}}</h3>
     <p>{{post.body}}</p>
   </li>
-</ul>
+</ul> -->
+
+<!-- -------------------------------------------------------------------- -->
+
+<h1>New Products</h1>
+<div>
+  <div>
+    <label>Title</label>
+    <input type="text" [(ngModel)]="product.title">
+  </div>
+  <div>
+    <label>Description</label>
+    <textarea [(ngModel)]="product.description"> </textarea>
+  </div>
+  <button (click)="addProduct()">Save</button>
+</div>
