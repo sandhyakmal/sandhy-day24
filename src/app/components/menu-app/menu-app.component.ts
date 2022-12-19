@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IMenu } from '../interfaces/i-menu';
+import { IMenu } from '../../interfaces/i-menu';
 
 @Component({
   selector: 'app-menu-app',

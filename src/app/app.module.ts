@@ -3,15 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BannerComponent } from './banner/banner.component';
-import { GaleryComponent } from './galery/galery.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { GaleryComponent } from './components/galery/galery.component';
 import { ImagesComponent } from './images/images.component';
 import { FormsModule } from '@angular/forms';
-import { PbbComponent } from './pbb/pbb.component';
+import { PbbComponent } from './components/pbb/pbb.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TodoComponent } from './todo/todo.component';
-import { MenuAppComponent } from './menu-app/menu-app.component';
+import { TodoComponent } from './components/todo/todo.component';
+import { MenuAppComponent } from './components/menu-app/menu-app.component';
+import { CounterComponent } from './components/counter/counter.component';
+import { AntrianComponent } from './components/antrian/antrian.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { MenuAppComponent } from './menu-app/menu-app.component';
     ImagesComponent,
     PbbComponent,
     TodoComponent,
-    MenuAppComponent
+    MenuAppComponent,
+    CounterComponent,
+    AntrianComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
