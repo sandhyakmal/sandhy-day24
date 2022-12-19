@@ -52,18 +52,25 @@
     <button (click)="counting()" >Counting</button>
   </p>
   <app-counter [count]="initialCount"></app-counter>
-</div> -->
+</div>
 
+--------------------------------------------------------------------
 
 <h1>App Antrian</h1>
 <app-antrian [antrian]="antrian"
 (onAntrianBerubah)="onAntrianBerubah($event)"></app-antrian>
 
 
---------------------------------------------------------------------
+-------------------------------------------------------------------- -->
 
 
-<h1>App Calculator</h1>
-<app-calculator total="total"
+<!-- <h1>App Calculator</h1>
+<app-calculator #calculator total="total"
 (onTotal)="onTotal($event)"></app-calculator>
 <p>Hasil: {{total}}</p>
+
+
+-------------------------------------------------------------------- -->
+
+<!-- <p>{{calculator.merkCalculator}}</p>
+<button (click)="calculator.getNumberEasy()">Click</button> -->

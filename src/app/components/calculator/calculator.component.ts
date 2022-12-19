@@ -8,6 +8,8 @@ import { Calculator } from 'src/app/interfaces/calculator';
 })
 export class CalculatorComponent implements OnInit {
 
+  merkCalculator: string = "DIY"
+
   @Input()
     a:number;
     b:number;
@@ -32,6 +34,10 @@ export class CalculatorComponent implements OnInit {
       a: this.a,
       b: this.b
     });
+  }
+
+  getNumberEasy(){
+    alert("Calculator baru nich");
   }
 
 }
