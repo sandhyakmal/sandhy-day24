@@ -1,7 +1,8 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpContext, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { IProduct } from "../interfaces/i-product";
+import { IProductWrapper } from "../interfaces/i-product-wrapper";
 import { BaseHttpService } from "./base-http.service";
 
 @Injectable({
@@ -33,5 +34,15 @@ export class ProductService {
             body,
             {headers}
         );
+    }
+
+    public all(limit:number, skip: number, select:string): Observable<IProductWrapper>{
+        let params: HttpParams = new HttpParams();
+        params.set('limit', limit);
+        params.set('skip', limit);
+        params.set('skip', select);
+        return this.http.get<IProductWrapper>(
+            `${this.baseHttp.baseURL}/products`, {params}
+        )
     }
 }
